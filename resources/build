@@ -1,0 +1,34 @@
+#!/bin/sh
+set -x -eo pipefail
+
+###
+# Dependencies
+###
+
+apk add --no-cache curl
+
+###
+# Installation
+###
+
+cloud-nuke_linux_amd64
+
+curl -sSLo /usr/local/bin/cloud_nuke \
+    https://github.com/gruntwork-io/cloud-nuke/releases/download/${CLOUD_NUKE_VERSION}/cloud-nuke_linux_amd64
+
+chmod +x /usr/local/bin/cloud_nuke
+
+###
+# Cleaning
+###
+
+apk del curl
+
+###
+# CIS Hardening
+###
+
+chmod 0600 /etc/shadow
+
+touch /etc/login.defs
+chmod 0444 /etc/login.defs
