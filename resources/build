@@ -11,8 +11,6 @@ apk add --no-cache curl
 # Installation
 ###
 
-cloud-nuke_linux_amd64
-
 curl -sSLo /usr/local/bin/cloud_nuke \
     https://github.com/gruntwork-io/cloud-nuke/releases/download/${CLOUD_NUKE_VERSION}/cloud-nuke_linux_amd64
 
