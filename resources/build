@@ -23,6 +23,12 @@ chmod +x /usr/local/bin/cloud_nuke
 apk del curl
 
 ###
+# Check
+###
+
+cloud_nuke -info
+
+###
 # CIS Hardening
 ###
 
