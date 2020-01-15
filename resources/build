@@ -26,7 +26,7 @@ apk del curl
 # Check
 ###
 
-cloud_nuke -info
+cloud_nuke --help
 
 ###
 # CIS Hardening
