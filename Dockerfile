@@ -1,6 +1,6 @@
-FROM alpine:3.11
+FROM alpine:3.14.1
 
-ENV CLOUD_NUKE_VERSION="v0.1.13"
+ENV CLOUD_NUKE_VERSION="v0.4.0"
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -19,7 +19,7 @@ ENTRYPOINT ["cloud-nuke"]
 LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.name"="cloud-nuke" \
       "org.label-schema.base-image.name"="docker.io/library/alpine" \
-      "org.label-schema.base-image.version"="3.11" \
+      "org.label-schema.base-image.version"="3.14.1" \
       "org.label-schema.description"="cloud-nuke in a container" \
       "org.label-schema.url"="https://github.com/gruntwork-io/cloud-nuke" \
       "org.label-schema.vcs-url"="https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/docker-cloud-nuke" \
