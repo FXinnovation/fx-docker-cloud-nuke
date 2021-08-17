@@ -1,6 +1,6 @@
 0.2.0 / 2021-08-16
 ==================
-i
+
   * feat: pins cloud-nuke to v0.4.0
   * chore: pins alpine base image to 3.14.1
   * chore: add pre-commit-config.yaml file
